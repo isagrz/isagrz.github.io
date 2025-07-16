@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+}
+
+.image-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  border: 3px solid #fff;
+}
+
+/* Common overlay style */
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding: 0.5em 1em;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+}
+
+/* Top stats bar */
+.overlay.top {
+  top: 10px;
+}
+
+/* Bottom info bar */
+.overlay.bottom {
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Score layout */
+.score-box {
+  flex: 1;
+  text-align: left;
+}
+
+.info-box {
+  flex: 1;
+  text-align: right;
+}
+
+.team.sf {
+  color: gold;
+  margin-right: 1em;
+}
+
+.team.kc {
+  color: red;
+}
