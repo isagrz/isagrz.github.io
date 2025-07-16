@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fundamental CSS comprehension</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
+  <!-- Original Card -->
+  <section class="card">
+    <header>
+      <h2>Chris Mills</h2>
+    </header>
+    <article>
+      <img src="chris.jpg" alt="A picture of Chris - a man with glasses, a beard, and a silly wooly hat">
+      <p>50 My Street<br>
+         The Town<br>
+         Gray Peach<br>
+         UK<br>
+         ZO50 1MU<br>
+        <strong>Tel</strong>: 01234 567 890<br>
+        <strong>Mail</strong>: chris@nothere.com</p>
+    </article>
+    <footer>
+      <p>Editing, writing, and web development services</p>
+    </footer>
+  </section>
+
+  <!-- Custom Card -->
+  <section class="card custom">
+    <header>
+      <h2>Lana Del Rey</h2>
+    </header>
+    <article>
+      <img src="lana.jpg" alt="A picture of Lana Del Rey">
+      <p>Singer • Songwriter • Poet<br>
+         Known for cinematic style<br>
+         National Anthem enthusiast<br>
+         <strong>Instagram</strong>: @honeymoon<br>
+         <strong>Website</strong>: lanadelrey.com</p>
+    </article>
+    <footer>
+      <p>Melancholy glamour and vintage Americana</p>
+    </footer>
+  </section>
+
+  </body>
+</html>
