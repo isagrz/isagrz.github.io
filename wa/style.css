@@ -1,50 +1,78 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Fundamental CSS comprehension</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+/* General page styles */
+body {
+  margin: 0;
+}
 
-  <!-- Original Card -->
-  <section class="card">
-    <header>
-      <h2>Chris Mills</h2>
-    </header>
-    <article>
-      <img src="chris.jpg" alt="A picture of Chris - a man with glasses, a beard, and a silly wooly hat">
-      <p>50 My Street<br>
-         The Town<br>
-         Gray Peach<br>
-         UK<br>
-         ZO50 1MU<br>
-        <strong>Tel</strong>: 01234 567 890<br>
-        <strong>Mail</strong>: chris@nothere.com</p>
-    </article>
-    <footer>
-      <p>Editing, writing, and web development services</p>
-    </footer>
-  </section>
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
 
-  <!-- Custom Card -->
-  <section class="card custom">
-    <header>
-      <h2>Lana Del Rey</h2>
-    </header>
-    <article>
-      <img src="lana.jpg" alt="A picture of Lana Del Rey">
-      <p>Singer • Songwriter • Poet<br>
-         Known for cinematic style<br>
-         National Anthem enthusiast<br>
-         <strong>Instagram</strong>: @honeymoon<br>
-         <strong>Website</strong>: lanadelrey.com</p>
-    </article>
-    <footer>
-      <p>Melancholy glamour and vintage Americana</p>
-    </footer>
-  </section>
+/* Card container styles */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
 
-  </body>
-</html>
+.card.custom {
+  background-color: #8a2be2;
+  font-family: 'Georgia', serif;
+}
+
+/* Header and footer styles */
+.card header,
+.card footer {
+  padding: 1em;
+  height: 5em;
+  box-sizing: border-box;
+}
+
+.card header {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/* Main content styles */
+.card article {
+  height: 12em;
+  background-color: rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+/* Reset margins for headers and paragraphs */
+h2, p {
+  margin: 0;
+}
+
+/* Header title */
+.card header h2 {
+  font-size: 2em;
+  line-height: 3em;
+}
+
+/* Footer paragraph */
+.card footer p {
+  font-size: 1.5em;
+  line-height: 3em;
+}
+
+/* Main paragraph inside article */
+.card article p {
+  padding: 1em;
+  color: #f8f8f8;
+}
