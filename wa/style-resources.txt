@@ -17,7 +17,7 @@ html {
 .card header
 .card
 
-/* Rulesets to be matched up with selectors */
+/*  Rulesets to be matched up with selectors  */
 
 {
   width: 35em;
