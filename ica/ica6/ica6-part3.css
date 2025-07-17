@@ -11,7 +11,7 @@
 
 }
 
-/* narrow screen < 600px = purple, else green */
+/* on narrow screens (less than 600px) make the text purple, otherwise use green. */
 #narrowScreen {
   color: green;
 }
@@ -21,7 +21,7 @@
   }
 }
 
-/* wide screen > 800px = lightblue, else red */
+/* on wide screens (>800px) text should be light blue, otherwise make it red */
 #wideScreen {
   color: red;
 }
@@ -31,7 +31,7 @@
   }
 }
 
-/* short screen < 500px = yellow, else turquoise */
+/* on short screens (<500px) text should be yellow, otherwise use turquoise */
 #shortScreen {
   color: turquoise;
 }
@@ -41,7 +41,7 @@
   }
 }
 
-/* tall screen > 800px = orange, else lavender */
+/* for tall screen (>800px) use orange text, otherwise use lavender text */
 #tallScreen {
   color: lavender;
 }
