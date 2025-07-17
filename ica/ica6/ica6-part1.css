@@ -40,3 +40,27 @@ background-color: orangered;
     font-size: 50px;
     border: 5px solid green;
 }
+
+/* make #text1 always be outside of #box1 */
+#text1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* position #text2 in the bottom-left corner of #box2 */
+#box2 {
+  position: relative;
+}
+#text2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* stick #text3 to the top */
+#text3 {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
