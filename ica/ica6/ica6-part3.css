@@ -10,3 +10,43 @@
 #tallScreen{
 
 }
+
+/* narrow screen < 600px = purple, else green */
+#narrowScreen {
+  color: green;
+}
+@media (max-width: 600px) {
+  #narrowScreen {
+    color: purple;
+  }
+}
+
+/* wide screen > 800px = lightblue, else red */
+#wideScreen {
+  color: red;
+}
+@media (min-width: 801px) {
+  #wideScreen {
+    color: lightblue;
+  }
+}
+
+/* short screen < 500px = yellow, else turquoise */
+#shortScreen {
+  color: turquoise;
+}
+@media (max-height: 500px) {
+  #shortScreen {
+    color: yellow;
+  }
+}
+
+/* tall screen > 800px = orange, else lavender */
+#tallScreen {
+  color: lavender;
+}
+@media (min-height: 801px) {
+  #tallScreen {
+    color: orange;
+  }
+}
