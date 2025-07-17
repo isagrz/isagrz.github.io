@@ -1,3 +1,4 @@
+/* General styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,6 +9,7 @@ body {
   max-width: 800px;
   width: 90%;
   margin: 2em auto;
+  position: relative;
 }
 
 .image-container img {
@@ -18,19 +20,24 @@ body {
 
 /* Common overlay style */
 .overlay {
-  background: rgba(0, 0, 0, 0.8);  
-  padding: 0.7em 1.2em;            
-  font-size: 1.1em;                
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.7em 1.2em;
+  font-size: 1.1em;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Top stats bar */
+/* Top overlay */
 .overlay.top {
   top: 10px;
 }
 
-/* Bottom info bar */
+/* Bottom overlay */
 .overlay.bottom {
   bottom: 10px;
   display: flex;
@@ -39,7 +46,7 @@ body {
   font-weight: bold;
 }
 
-/* Score layout */
+/* Score and info layout */
 .score-box {
   flex: 1;
   text-align: left;
