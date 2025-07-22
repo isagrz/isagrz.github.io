@@ -1,20 +1,33 @@
-body{
-    background-color: khaki;
-}
-#box1{
-    width: 25vw;
-    height: 20vh;
-    background-color: indianred;
+body {
+  background-color: khaki;
 }
 
-
-#box2{
-    width: 25vw;
-    height:20vh;
-    position: relative;
-    background-color: orangered;
+/* box 1: hover effect with pseudo-class */
+#box1 {
+  width: 25vw;
+  height: 20vh;
+  background-color: indianred;
+  transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
-@keyframes box2move{
+#box1:hover {
+  background-color: purple;
+  transform: scale(1.1);
+}
 
+/* box 2: animation using keyframes */
+#box2 {
+  width: 25vw;
+  height: 20vh;
+  background-color: orangered;
+  position: relative;
+  animation: box2move 4s infinite;
+}
+
+@keyframes box2move {
+  0%   { top: 0; left: 0; }
+  25%  { top: 0; left: 300px; }
+  50%  { top: 200px; left: 300px; }
+  75%  { top: 200px; left: 0; }
+  100% { top: 0; left: 0; }
 }
