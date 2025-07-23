@@ -13,7 +13,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #C34A7E; /* magenta pink from my color palette */
+  background-color: #C34A7E; /* magenta pink color from my palette */
   padding: 0 5vw;
 }
 
@@ -21,7 +21,7 @@ nav a {
   width: 10vw;
   text-align: center;
   text-decoration: none;
-  color: #F9F4EF; /* Soft Cream for contrast */
+  color: #F9F4EF; /* soft cream color to contrast */
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease;
