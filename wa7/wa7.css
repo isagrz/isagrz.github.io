@@ -29,6 +29,9 @@ nav a {
 
 nav a:hover {
   color: white;
+  background-color: #A33A6B; /* darker shade of pink for feedback */
+  border-radius: 4px;
+  padding: 0.3rem;
 }
 
 #red-ball {
