@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2e003e;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #aaffaa;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.concert {
+  border: 2px solid #6c9bd2;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #111;
+}
+
+h3 {
+  color: #aaffaa;
+  font-size: 1.3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2e003e;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .concert {
+    font-size: 0.95rem;
+  }
+}
