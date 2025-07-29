@@ -10,6 +10,7 @@ body {
   background-color: coral;
   margin: 20px auto;
   border-radius: 8px;
+  border: 2px solid black; /* optional: makes it more visible */
 }
 
 button {
