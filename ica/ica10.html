@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICA 10</title>
+  <link rel="stylesheet" href="ica10.css">
+</head>
+<body>
+  <h1>ICA 10</h1>
+
+  <div id="colorBox"></div>
+  <button id="colorBtn">Change Color</button>
+
+  <p id="textPara">Click the button to change this text.</p>
+  <button id="textBtn">Change Text</button>
+
+  <script>
+    document.getElementById("colorBtn").addEventListener("click", () => {
+      const box = document.getElementById("colorBox");
+      box.style.backgroundColor = box.style.backgroundColor === "coral" ? "lightblue" : "coral";
+    });
+
+    document.getElementById("textBtn").addEventListener("click", () => {
+      const para = document.getElementById("textPara");
+      para.textContent = para.textContent === "Click the button to change this text."
+        ? "Text changed!"
+        : "Click the button to change this text.";
+    });
+  </script>
+</body>
+</html>
