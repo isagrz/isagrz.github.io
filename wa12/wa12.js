@@ -36,5 +36,5 @@ function showLoading() {
 
 newQuoteButton.addEventListener('click', getQuote);
 
-// Initial quote on page load
+// initial quote on page load
 getQuote();
