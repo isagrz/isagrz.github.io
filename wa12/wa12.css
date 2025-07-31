@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f8d49a, #f1b963);
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4a2b0f;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #6d3b0e;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.twitter:hover {
+  background-color: #0c7abf;
+}
+
+.extension {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
