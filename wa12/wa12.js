@@ -4,14 +4,18 @@ const quoteAuthor = document.querySelector('#js-quote-author');
 const tweetButton = document.querySelector('#js-tweet');
 
 const endpoint = 'https://api.quotable.io/random';
+const proxyURL = `https://api.allorigins.win/get?url=${encodeURIComponent(endpoint)}`;
 
 async function getQuote() {
   showLoading();
   try {
-    const response = await fetch(endpoint);
+    const response = await fetch(proxyURL);
     if (!response.ok) throw Error(response.statusText);
+    
     const data = await response.json();
-    displayQuote(data);
+    const quoteData = JSON.parse(data.contents);
+
+    displayQuote(quoteData);
   } catch (err) {
     console.error(err);
     alert('Failed to fetch quote.');
