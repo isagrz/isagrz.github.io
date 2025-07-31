@@ -3,7 +3,7 @@ const quoteText = document.querySelector('#js-quote-text');
 const quoteAuthor = document.querySelector('#js-quote-author');
 const tweetButton = document.querySelector('#js-tweet');
 
-const endpoint = 'https://zenquotes.io/api/random';
+const endpoint = 'https://api.quotable.io/random';
 
 async function getQuote() {
   showLoading();
@@ -11,7 +11,7 @@ async function getQuote() {
     const response = await fetch(endpoint);
     if (!response.ok) throw Error(response.statusText);
     const data = await response.json();
-    displayQuote(data[0]);
+    displayQuote(data);
   } catch (err) {
     console.error(err);
     alert('Failed to fetch quote.');
@@ -19,12 +19,12 @@ async function getQuote() {
 }
 
 function displayQuote(quoteObj) {
-  quoteText.textContent = `"${quoteObj.q}"`;
-  quoteAuthor.textContent = `— ${quoteObj.a}`;
+  quoteText.textContent = `"${quoteObj.content}"`;
+  quoteAuthor.textContent = `— ${quoteObj.author}`;
   tweetButton.setAttribute(
     'onclick',
     `window.open('https://twitter.com/intent/tweet?text=${encodeURIComponent(
-      `"${quoteObj.q}" — ${quoteObj.a}`
+      `"${quoteObj.content}" — ${quoteObj.author}`
     )}', '_blank')`
   );
 }
@@ -35,6 +35,4 @@ function showLoading() {
 }
 
 newQuoteButton.addEventListener('click', getQuote);
-
-// initial quote on page load
 getQuote();
