@@ -1,7 +1,7 @@
 const displayedImage = document.getElementById('fullImage');
 const thumbBar = document.querySelector('.thumb-bar');
 
-// Array of image filenames and alt text
+// image filenames + alt text
 const images = [
   { src: 'img/photobooth.jpg', alt: 'Photo booth moment' },
   { src: 'img/out-to-nyc.jpg', alt: 'Out to NYC' },
@@ -11,7 +11,7 @@ const images = [
   { src: 'img/strawberry-heels.jpg', alt: 'Strawberry heels' }
 ];
 
-// Loop through images and create thumbnail elements
+// loop through images + create thumbnail elements
 images.forEach(image => {
   const newImage = document.createElement('img');
   newImage.src = image.src;
